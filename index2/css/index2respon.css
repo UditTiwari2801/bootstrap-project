@@ -1,0 +1,89 @@
+/* Media Query 1199px */
+@media (max-width:1199px) {
+
+h1{
+    font-size: 65px;
+}
+
+    
+}
+/* Media Query 991 px */
+@media (max-width:991px) {
+
+    h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .header_wrapper .navbar-brand img{
+        max-width: 80px;
+    }
+
+    /* navbar  */
+
+    .header-scrolled{
+        height: auto;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 15px;
+    }
+    .header_wrapper  .navbar-collapse{
+        margin-top: -2px;
+    }
+    .header_wrapper  .nav-item .nav-link{
+        margin-top: 15px;
+    }
+    .banner{
+        padding-top: 70px;
+    }
+    .banner .top-menu .card{
+        height: 200px;
+    }
+
+    /* About css  */
+
+    .about_wrapper{
+        padding-bottom: unset;
+    }
+    .about_wrapper .card{
+        z-index: 10;
+        top: unset;
+        right: unset;
+    }
+    
+
+
+
+}
+/* media query 767px */
+@media (max-width:767px){
+
+h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+}
+.menu_wrapper .row{
+    padding-top: 70px;
+}
+.review_wrapper .carousel-caption{
+    bottom: 0;
+}
+.review_wrapper .carousel-item{
+    min-height: 460px;
+}
+
+@media (max-width:590px) {
+
+
+}
