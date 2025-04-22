@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Quicksand:wght@500&family=Roboto:ital,wght@1,300&display=swap');
+:root{
+    --primary-color: #ff553e;
+    --secondary-color: #333;
+    --white-color: #fff;
+    --black-color: #111;
+    --third-color: #061738;
+
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color: var(--primary-color);
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* SCROLLBAR CSS ? */
+
+::-webkit-scrollbar{
+    width: 0.31rem
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color)
+}
+::-webkit-scrollbar-thumb{
+background: var(--primary-color);
+
+}
+
+/* CUSTOM CSS DESIGN  */
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+
+h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    color: var(--white-color);
+}
+
+h3{
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-black);
+}
+
+h4{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-bottom: 0.9rem;
+    color: var(--white-color);
+    transition: all.3s linear;
+}
+h5{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+p{
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    letter-spacing:  0.06rem;
+    opacity: 0.8;
+
+}
+.main-btn{
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    border:  1px solid var(--primary-color);
+    display: inline-block;
+    padding: 0 30px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+     background: linear-gradient(to right, var(--white-color) 50%, transparent 50%) ;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+
+}
+.main-btn:hover{
+    color: var(--third-color);
+    background-position: left bottom;
+}
+.wrapper{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--secondary-color);
+}
+.text-content{
+    width: 60%;
+    margin: auto;
+}
+
+/* custom css design  */
+
+.top-header{
+    background-color: var(--secondary-color);
+}
+.top-header span{
+    font-size: 0.8rem;
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+
+ }
+ .navigation_wrap {
+    background-color:var(--third-color);
+    /* position: fixed; */
+    z-index: 1000;
+    left: 0;
+    width: 100%;
+    
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+ }
+ .navigation_wrap .nav-item{
+    padding: 0 0.5rem;
+    transition: all 200ms linear;
+ }
+ .navbar-toggler:focus{
+    outline: unset;
+    border: none;
+    box-shadow: none;
+ }
+ .navigation_wrap .nav-link{
+    padding-top: 0.9rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 0.06rem;
+ }
+ .navigation_wrap .nav-link:hover,
+ .navigation_wrap .nav-link.active{
+    color: var(--primary-color);
+ }
+ .navigation_wrap.scroll-on{
+    position: fixed;
+    background-color: var(--black-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.175rem 1 rgb(0, 0, 0, 0.09);
+    transition: all 15s ease-in-out 0s;
+ }
+ .navigation_wrap.scroll-on .nav-link:hover,
+ .navigation_wrap.scroll-on .nav-link.active{
+    color: var(--primary-color);
+ }
+ #home .carousel-caption {
+    top: 12rem;
+ }
+ #home .carousel-caption p{
+    max-width: 36.25rem;
+    margin: 1.06rem auto;
+ }
+
+ /* ARRIVALS  */
+ .new-arrivals .banner-info{
+    margin: auto;
+    bottom: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    padding: 0 15px;
+ }
+ .new-arrivals .card-banner:nth-child(2) h2,
+ .new-arrivals .card-banner:nth-child(2) p,
+ .new-arrivals .card-banner:nth-child(2) a{
+    color: var(--black-color);
+ }
+ .new-arrivals .card-banner:nth-child(2) a::before,
+ .new-arrivals .card-banner:nth-child(2) a::after{
+    background-color: var(--black-color);
+ }
+
+ .new-arrivals .card-banner .card-thumb,
+ .products .item-product{
+    position: relative;
+    display: block;
+    overflow: hidden;
+ }
+ .new-arrivals .card-banner .card-thumb img,
+ .products .item-product img{
+    transition: al 1s ease-out 0s;
+ }
+ .new-arrivals .card-banner .card-thumb img:hover,
+ .products .item-product img:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+ }
+
+ /* PRODUCTS DESIGN   */
+ .products .wrapper{
+    background-color: var(--black-color);
+ }
+.products .nav-tabs{
+    justify-content: center;
+    border: 0;
+}
+.products .nav-tabs .nav-link{
+    display: block;
+    padding: 0 30px;
+    border: 1px solid var(--white-color);
+    border-radius: 20px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    min-height: 36px;
+    margin: 10px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+.products .nav-tabs .nav-item .nav-link:hover{
+    color: var(--primary-color);
+}
+
+.products .product-info .cat-parent,
+.products .product-info .wishlist i{
+    font-size: 0.8rem;
+    opacity: 0.6;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.products .product-title a{
+    margin: 0 0 7px;
+    display: block;
+    color: var(--white-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.products .rating i{
+    color: #f4d632;
+}
+.basket a i{
+    color: var(--white-color);
+}
+
+/* BLOG SECTION  */
+
+.blog-section{
+    background-color: var(--black-color);
+}
+
+/* DEAL OF THE DAY CSS  */
+.deal-of-the-day{
+    background-image: url(../imgs3/img-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* FOOTER SECTON  */
+    .footer{
+        background-color: var(--secondary-color);
+    }
+    .footer .footer-social a i {
+        font-size: 1.5rem;
+        color: var(--white-color);
+        padding:  0 1rem;
+    }
+    .footer .footer-social a:hover i{
+        color: var(--primary-color);
+    } 
+    .products .nav-tabs .nav-item .nav-link:hover
+    {
+        color: var(--primary-color);
+    }
